@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'beanco';
+    src: url(./fonts/beanco.otf);
+}
+
+@font-face {
+    font-family: 'eirene regular';
+    src: url(./fonts/eirene\ regular.otf);
+}
+
+@font-face {
+    font-family: 'eirene bold';
+    src: url(./fonts/eirene\ bold.otf);
+}
+
+@font-face {
+    font-family: 'eirene italic';
+    src: url(./fonts/eirene\ italic.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-family: 'beanco';
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 0px 1px black,
+                 1px 1px 2px black,
+                 2px 2px 3px black,
+                 3px 3px 4px black,
+                 4px 4px 5px black,
+                 5px 5px 6px black,
+                 6px 6px 7px black,
+                 7px 7px 8px black;
+    margin: 20px 10px;
+}
+
+.content{
+    width: 70%;
+    margin: 50px auto;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content > section {
+    position: absolute;
+    width: 500px;
+    height: 460px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px black,
+                2px 2px 6px black;
+    transition: all 500ms;
+}
+
+.subtitle{
+    display: block;
+    font-family: 'eirene italic';
+    font-size: 40px;
+    text-shadow: 0px 0px 1px black,
+                 1px 1px 2px black,
+                 2px 2px 3px black,
+                 3px 3px 4px black,
+                 4px 4px 5px black;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+#data-form{
+    width: 350px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    width: 100%;
+}
+
+#data-form > select {
+    height: 33px;
+    font-family: 'eirene regular';
+    font-size: 18px;
+    padding: 5px ;
+    outline: none;
+    border-radius: 5px;
+}
+
+#data-form > label {
+    margin-bottom: 20px;
+    font-family: 'eirene regular';
+    font-size: 27px;
+}
+
+#data-form > label > input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#home,
+input[type="submit"]{
+    font-family: 'eirene regular';
+    font-size: 20px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 300ms;
+}
+
+#home{
+    width: 90%;
+    margin-left: 23px;
+}
+
+#home:hover,
+input[type="submit"]:hover{
+    background-color: #999;
+}
+
+
+.main-content{
+    transition: all 200ms;
+}
+
+.password-content{
+    transform: translateX(800px);
+    opacity: 0;
+}
+
+.password {
+    font-family: 'eirene regular';
+    font-size: 60px;
+    text-align: center;
+    margin: 80px 0px;
+}
